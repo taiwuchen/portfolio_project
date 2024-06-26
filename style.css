@@ -827,7 +827,7 @@ footer p {
     transform: translateX(0);
 }
 
-/* Fade-in */
+/* Fade-in-bottom */
 .fade-in-bottom {
     opacity: 0;
     transform: translateY(50px);
@@ -835,6 +835,18 @@ footer p {
 }
 
 .fade-in-bottom.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Fade-in-top*/
+.fade-in-top {
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-top.show {
     opacity: 1;
     transform: translateY(0);
 }

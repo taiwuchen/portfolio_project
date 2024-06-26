@@ -96,17 +96,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         threshold: 0.1
     });
     
-    // Apply animation to experience cards
-    const experienceCards = document.querySelectorAll('.experience-card');
-    experienceCards.forEach(card => {
-        observer.observe(card);
-    });
-    
-    // Apply animation to project cards
-    const projectCards = document.querySelectorAll('.project-card');
-    projectCards.forEach(card => {
-        observer.observe(card);
-    });
+
     
     // Intro section animations
     const introElements = document.querySelectorAll('#intro .profile-container, #intro .profile-picture, #intro .profile-info h1, #intro .profile-info h2, #intro .profile-info p, #intro .cta-buttons, #intro .social-links');
@@ -206,7 +196,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
     
-    const hiddenElements = document.querySelectorAll('.fade-in-bottom, .hidden, .scale-in, .rotate-in, .slide-in-right, .slide-in-top, .slide-in-bottom, .flip-in, .swing-in, .zoom-out, .glitch, .elastic-in');
+    const hiddenElements = document.querySelectorAll('.fade-in-bottom, .fade-in-top, .hidden, .scale-in, .rotate-in, .slide-in-right, .slide-in-top, .slide-in-bottom, .flip-in, .swing-in, .zoom-out, .glitch, .elastic-in');
     hiddenElements.forEach((el) => observer.observe(el));
 });
 
