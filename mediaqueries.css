@@ -1,15 +1,133 @@
-@media screen and (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul li {
-        margin: 10px 0;
-    }
+/* Hide menu-toggle by default */
+.menu-toggle {
+  display: none;
 }
+
+/* General responsive styles */
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+  .social-links {
+      justify-content: center;
+      margin-top: 20px; 
+  }
+
+  footer {
+    margin-top: auto;
+  }
+  
+  footer nav ul {
+      display: none;
+    }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .profile-info h2 {
+    font-size: 36px;
+  }
+
+  .profile-info p {
+    font-size: 16px;
+  }
+
+  .profile-container, .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-picture {
+    order: -1;
+    margin-bottom: 20px;
+    width: 50%;
+    height: auto;
+    margin: auto;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-container, .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card, .project-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .skills-container {
+    padding: 0 20px;
+  }
+
+  /* Header styles for smaller screens */
+  header {
+    position: fixed;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f0f0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+/* Smaller screen sizes */
+@media screen and (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

@@ -8,130 +8,269 @@
 </head>
 <body>
     <header>
-        <div class="logo">MyPortfolio</div>
+        <div class="header-container">
+            <h1 class="logo hidden">Taiwu's Portfolio</h1>
+            <button class="menu-toggle">☰</button>
+            <nav>
+                <ul class="slide-in-right">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    
+    <main>
+        <section id="home">
+            <div class="profile-container">
+                <div class="profile-picture flip-in">
+                    <img src="assets/profile_picture.png" alt="Profile Picture">
+                </div>
+                <div class="profile-info">
+                    <h1 class="swing-in delay-100">Hello, I'm</h1>
+                    <h2 class="swing-in delay-200">Taiwu Chen</h2>
+                    <p class="swing-in delay-300">Software Engineering Student</p>
+                    <p class="swing-in delay-400">at University of Calgary</p>
+                    <div class="cta-buttons">
+                        <button class="custom-button zoom-out delay-500">Download CV</button>
+                        <button class="custom-button dark zoom-out delay-600" onclick="scrollToSection('contact')">Contact Info</button>
+                    </div>
+                    <div class="social-links rotate-in delay-700">
+                        <a href="https://www.linkedin.com/in/taiwu-chen-766519245/" target="_blank" class="social-icon">
+                            <img src="assets/linkedin-icon.png" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/uwiat" target="_blank" class="social-icon">
+                            <img src="assets/github-icon.png" alt="GitHub">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <h2 class="section-title hidden delay-50">More About Me</h2>
+                <p class="section-subtitle hidden delay-50">Your introduction text goes here</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="hidden delay-100">Programming Language</h2>
+                    <div class="skills-grid hidden delay-150">
+                        <div class="skill-item">
+                            <img src="assets/python.webp" alt="Python" class="skill-icon">
+                            <span class="skill-name">Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/c++.png" alt="C/C++" class="skill-icon">
+                            <span class="skill-name">C/C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/html.ico" alt="HTML/CSS" class="skill-icon">
+                            <span class="skill-name">HTML/CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/js.webp" alt="JavaScript" class="skill-icon">
+                            <span class="skill-name">JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/java.png" alt="Java" class="skill-icon">
+                            <span class="skill-name">Java</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/sql.png" alt="SQL" class="skill-icon">
+                            <span class="skill-name">SQL</span>
+                        </div>
+                    </div>
+                    
+                    <h2 class="hidden delay-200">Software</h2>
+                    <div class="skills-grid hidden delay-250">
+                        <div class="skill-item">
+                            <img src="assets/git.png" alt="Git" class="skill-icon">
+                            <span class="skill-name">Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/drawio.jpg" alt="Draw.io" class="skill-icon">
+                            <span class="skill-name">Draw.io</span>
+                        </div>
+                        <div class="skill-item">
+                            <img src="assets/excel.webp" alt="Excel" class="skill-icon">
+                            <span class="skill-name">Excel</span>
+                        </div>
+                    </div>
+
+                    
+                    <h2 class="hidden delay-300">Other</h2>
+                    <div class="skills-grid hidden delay-350">
+                        <div class="skill-item">
+                            <div class="skill-icon">PIC</div>
+                            <span class="skill-name">Skill 1</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">PIC</div>
+                            <span class="skill-name">Skill 2</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">PIC</div>
+                            <span class="skill-name">Skill 3</span>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="about-picture slide-in-right delay-500">
+                    <img src="assets/mypic1.jpg" alt="Taiwu Chen">
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="experience">
+            <h3 class="section-subtitle elastic-in">Professional</h3>
+            <h2 class="section-title elastic-in">Experience</h2>
+            
+            <div class="experience-container">
+                <div class="experience-card elastic-in delay-100">
+                    <div class="experience-logo">
+                        <img src="assets/mypic1.jpg" alt="Tech Company XYZ Logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Software Engineering Intern</h3>
+                        <h4 class="company">Tech Company XYZ</h4>
+                        <p class="date">May 2023 - August 2023</p>
+                        <p class="experience-description">Brief description of your role and responsibilities...</p>
+                        <button class="custom-button">Learn More</button>
+                    </div>
+                </div>
+                <div class="experience-card elastic-in delay-300">
+                    <div class="experience-logo">
+                        <img src="assets/mypic1.jpg" alt="Tech Company XYZ Logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Software Engineering Intern</h3>
+                        <h4 class="company">Tech Company XYZ</h4>
+                        <p class="date">May 2023 - August 2023</p>
+                        <p class="experience-description">Brief description of your role and responsibilities...</p>
+                        <button class="custom-button">Learn More</button>
+                    </div>
+                </div>
+                <div class="experience-card elastic-in delay-500">
+                    <div class="experience-logo">
+                        <img src="assets/mypic1.jpg" alt="Tech Company XYZ Logo">
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Software Engineering Intern</h3>
+                        <h4 class="company">Tech Company XYZ</h4>
+                        <p class="date">May 2023 - August 2023</p>
+                        <p class="experience-description">Brief description of your role and responsibilities...</p>
+                        <button class="custom-button">Learn More</button>
+                    </div>
+                </div>
+                <div class="experience-card elastic-in delay-700">
+                    <div class="experience-logo">
+                        <!-- Logo for University of Calgary will go here -->
+                    </div>
+                    <div class="experience-content">
+                        <h3 class="experience-title">Research Assistant</h3>
+                        <h4 class="company">University of Calgary</h4>
+                        <p class="date">September 2022 - April 2023</p>
+                        <p class="experience-description">Brief description of your role and responsibilities...</p>
+                        <button class="custom-button">Learn More</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        
+        
+        <section id="projects">
+            <h3 class="section-subtitle slide-in-top">Recent</h3>
+            <h2 class="section-title slide-in-top">Projects</h2>
+            
+            <div class="projects-container">
+                <div class="projects-card hidden">
+                    <img src="assets/profile_picture.png" alt="Project One" class="projects-img">
+                    <h3 class="projects-title">Project One</h3>
+                    <div class="projects-links">
+                        <button class="custom-button">Details</button>
+                        <button class="custom-button dark">Github</button>
+                    </div>
+                </div>
+                <div class="projects-card slide-in-top">
+                    <img src="assets/profile_picture.png" alt="Project Two" class="projects-img">
+                    <h3 class="projects-title">Project Two</h3>
+                    <div class="projects-links">
+                        <button class="custom-button">Details</button>
+                        <button class="custom-button dark">Github</button>
+                    </div>
+                </div>
+                <div class="projects-card slide-in-right">
+                    <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
+                    <h3 class="projects-title">Project Three</h3>
+                    <div class="projects-links">
+                        <button class="custom-button">Details</button>
+                        <button class="custom-button dark">Github</button>
+                    </div>
+                </div>
+                <div class="projects-card hidden">
+                    <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
+                    <h3 class="projects-title">Project Three</h3>
+                    <div class="projects-links">
+                        <button class="custom-button">Details</button>
+                        <button class="custom-button dark">Github</button>
+                    </div>
+                </div>
+                <div class="projects-card slide-in-right">
+                    <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
+                    <h3 class="projects-title">Project Three</h3>
+                    <div class="projects-links">
+                        <button class="custom-button">Details</button>
+                        <button class="custom-button dark">Github</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    
+
+        <section id="contact">
+            <h3 class="section-subtitle glitch">Get In Touch</h3>
+            <h2 class="section-title glitch">Contact Me</h2>
+            
+            <div class="contact-container">
+                <button class="contact-button glitch delay-200" data-copytext="chen.taiwu@ucalgary.ca">
+                    <img src="assets/email.png" alt="School Email">
+                    <span>chen.taiwu@ucalgary.ca</span>
+                </button>
+                <button class="contact-button glitch delay-400" data-copytext="taiwu.chen@icloud.com">
+                    <img src="assets/email.png" alt="Personal Email">
+                    <span>taiwu.chen@icloud.com</span>
+                </button>
+                <button class="contact-button glitch delay-600" data-copytext="+15879716606">
+                    <img src="assets/phone.png" alt="Phone">
+                    <span>+1 (587) 971-6606</span>
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
         <nav>
-            <ul>
+            <ul class="zoom-out">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-    </header>
-
-    <main>
-        <section id="intro">
-            <div class="profile-container">
-                <img src="assets/profile_picture.png" alt="Taiwu Chen" class="profile-picture">
-                <div class="profile-info">
-                    <h1>Hello, I'm</h1>
-                    <h2>Taiwu Chen</h2>
-                    <p>Software Engineering Student</p>
-                    <p>at University of Calgary</p>
-                    <div class="cta-buttons">
-                        <button>Download CV</button>
-                        <button>Contact Info</button>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="linkedin">LinkedIn</a>
-                        <a href="#" class="github">GitHub</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        
-
-        <section id="experience">
-            <h2>Experience</h2>
-            <div class="experience-container">
-                <div class="experience-item">
-                    <h3>Software Engineering Intern</h3>
-                    <p class="company">Tech Company XYZ</p>
-                    <p class="date">May 2023 - August 2023</p>
-                    <ul>
-                        <li>Developed and maintained web applications using React and Node.js</li>
-                        <li>Collaborated with the team to implement new features and improve existing ones</li>
-                        <li>Participated in code reviews and contributed to the team's coding standards</li>
-                    </ul>
-                </div>
-                <div class="experience-item">
-                    <h3>Research Assistant</h3>
-                    <p class="company">University of Calgary</p>
-                    <p class="date">September 2022 - April 2023</p>
-                    <ul>
-                        <li>Assisted in developing algorithms for data analysis in machine learning projects</li>
-                        <li>Conducted literature reviews and contributed to research papers</li>
-                        <li>Presented findings at departmental seminars</li>
-                    </ul>
-                </div>
-                <!-- Add more experience items as needed -->
-            </div>
-        </section>
-        
-
-        <section id="projects">
-            <h3 class="section-subtitle">Browse My Recent</h3>
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="path/to/project1-image.jpg" alt="Project One" class="project-img">
-                    <h3 class="project-title">Project One</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link github">GitHub</a>
-                        <a href="#" class="project-link demo">Live Demo</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project2-image.jpg" alt="Project Two" class="project-img">
-                    <h3 class="project-title">Project Two</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link github">GitHub</a>
-                        <a href="#" class="project-link demo">Live Demo</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <img src="path/to/project3-image.jpg" alt="Project Three" class="project-img">
-                    <h3 class="project-title">Project Three</h3>
-                    <div class="project-links">
-                        <a href="#" class="project-link github">GitHub</a>
-                        <a href="#" class="project-link demo">Live Demo</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item phone">
-                        <i class="fas fa-phone"></i>
-                        <p>+1 (123) 456-7890</p>
-                    </div>
-                    <div class="contact-item email">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <p>personal@email.com</p>
-                            <p>school@university.edu</p>
-                        </div>
-                    </div>
-                    <div class="contact-item location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <p>Calgary, AB, Canada</p>
-                    </div>
-                </div>
-                <div class="social-links">
-                    <a href="#" class="social-link linkedin">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="#" class="social-link github">
-                        <i class="fab fa-github"></i>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
+        <p class="slide-in-bottom">&copy; 2024 Taiwu Chen. All Rights Reserved</p>
+    </footer>
+    
 
     <script src="script.js"></script>
 </body>
