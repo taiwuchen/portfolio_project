@@ -9,10 +9,10 @@
 <body>
     <header>
         <div class="header-container">
-            <h1 class="logo hidden">Taiwu's Portfolio</h1>
+            <h1 class="logo slide-in-left">Taiwu's Portfolio</h1>
             <button class="menu-toggle">☰</button>
-            <nav>
-                <ul class="slide-in-right">
+            <nav class="slide-in-right">
+                <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
                     <li><a href="#about" class="nav-link">About</a></li>
                     <li><a href="#experience" class="nav-link">Experience</a></li>
@@ -32,14 +32,14 @@
                 </div>
                 <div class="profile-info">
 
-                    <h2 class="swing-in delay-50">Taiwu Chen</h2>
-                    <p class="swing-in delay-300">Software Engineering Student</p>
-                    <p class="swing-in delay-400">at University of Calgary</p>
-                    <div class="cta-buttons">
-                        <button class="custom-button zoom-out delay-500">Download CV</button>
-                        <button class="custom-button dark zoom-out delay-600" onclick="scrollToSection('contact')">Contact Info</button>
+                    <h2 class="fade-in-top delay-50">Taiwu Chen</h2>
+                    <p class="slide-in-right delay-400">Software Engineering Student</p>
+                    <p class="slide-in-right delay-700">at University of Calgary</p>
+                    <div class="cta-buttons slide-in-bottom delay-600">
+                        <button class="custom-button">Download CV</button>
+                        <button class="custom-button dark" onclick="scrollToSection('contact')">Contact Info</button>
                     </div>
-                    <div class="social-links rotate-in delay-700">
+                    <div class="social-links scale-in delay-700">
                         <a href="https://www.linkedin.com/in/taiwu-chen-766519245/" target="_blank" class="social-icon">
                             <img src="assets/linkedin-icon.png" alt="LinkedIn">
                         </a>
@@ -53,14 +53,14 @@
         
         <section id="about" class="about-section">
             <div class="about-header">
-                <h2 class="section-title hidden delay-50">More About Me</h2>
-                <p class="section-subtitle hidden delay-50">Your introduction text goes here</p>
+                <h2 class="section-title slide-in-left delay-50">More About Me</h2>
+                <p class="section-subtitle slide-in-left delay-50">Your introduction text goes here</p>
             </div>
             
             <div class="about-content">
                 <div class="about-text">
-                    <h2 class="hidden delay-100">Programming Language</h2>
-                    <div class="skills-grid hidden delay-150">
+                    <h2 class="slide-in-left delay-100">Programming Language</h2>
+                    <div class="skills-grid slide-in-left delay-150">
                         <div class="skill-item">
                             <img src="assets/python.webp" alt="Python" class="skill-icon">
                             <span class="skill-name">Python</span>
@@ -88,8 +88,8 @@
                     </div>
                     
                     
-                    <h2 class="hidden delay-200">Software</h2>
-                    <div class="skills-grid hidden delay-250">
+                    <h2 class="slide-in-left delay-200">Software</h2>
+                    <div class="skills-grid slide-in-left delay-250">
                         <div class="skill-item">
                             <img src="assets/git.png" alt="Git" class="skill-icon">
                             <span class="skill-name">Git</span>
@@ -105,8 +105,8 @@
                     </div>
 
                     
-                    <h2 class="hidden delay-300">Other</h2>
-                    <div class="skills-grid hidden delay-350">
+                    <h2 class="slide-in-left delay-300">Other</h2>
+                    <div class="skills-grid slide-in-left delay-350">
                         <div class="skill-item">
                             <div class="skill-icon">PIC</div>
                             <span class="skill-name">Skill 1</span>
@@ -146,7 +146,10 @@
                             <h4 class="company">Tech Company XYZ</h4>
                             <p class="date">May 2023 - August 2023</p>
                             <p class="experience-description">Brief description of your role and responsibilities...</p>
-                            <button class="custom-button">Learn More</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -161,7 +164,11 @@
                             <h4 class="company">Tech Company XYZ</h4>
                             <p class="date">May 2023 - August 2023</p>
                             <p class="experience-description">Brief description of your role and responsibilities...</p>
-                            <button class="custom-button">Learn More</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -176,7 +183,10 @@
                             <h4 class="company">Tech Company XYZ</h4>
                             <p class="date">May 2023 - August 2023</p>
                             <p class="experience-description">Brief description of your role and responsibilities...</p>
-                            <button class="custom-button">Learn More</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -191,7 +201,10 @@
                             <h4 class="company">University of Calgary</h4>
                             <p class="date">September 2022 - April 2023</p>
                             <p class="experience-description">Brief description of your role and responsibilities...</p>
-                            <button class="custom-button">Learn More</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -205,12 +218,15 @@
             
             <div class="projects-container">
                 
-                <div class="hidden">
+                <div class="slide-in-left">
                     <div class="projects-card">
                         <img src="assets/profile_picture.png" alt="Project One" class="projects-img">
                         <h3 class="projects-title">Project One</h3>
                         <div class="projects-links">
-                            <button class="custom-button">Details</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                             <button class="custom-button dark">Github</button>
                         </div>
                     </div>
@@ -221,7 +237,10 @@
                         <img src="assets/profile_picture.png" alt="Project Two" class="projects-img">
                         <h3 class="projects-title">Project Two</h3>
                         <div class="projects-links">
-                            <button class="custom-button">Details</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                             <button class="custom-button dark">Github</button>
                         </div>
                     </div>
@@ -232,18 +251,24 @@
                         <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
                         <h3 class="projects-title">Project Three</h3>
                         <div class="projects-links">
-                            <button class="custom-button">Details</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                             <button class="custom-button dark">Github</button>
                         </div>
                     </div>
                 </div>
                 
-                <div class="hidden">
+                <div class="slide-in-left">
                     <div class="projects-card">
                         <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
                         <h3 class="projects-title">Project Three</h3>
                         <div class="projects-links">
-                            <button class="custom-button">Details</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                             <button class="custom-button dark">Github</button>
                         </div>
                     </div>
@@ -254,7 +279,10 @@
                         <img src="assets/profile_picture.png" alt="Project Three" class="projects-img">
                         <h3 class="projects-title">Project Three</h3>
                         <div class="projects-links">
-                            <button class="custom-button">Details</button>
+                            <button class="custom-button learn-more">Learn More</button>
+                            <div class="additional-description hidden">
+                                <p>Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...Detailed description of your role, your achievements, and any other relevant information...</p>
+                            </div>
                             <button class="custom-button dark">Github</button>
                         </div>
                     </div>
@@ -268,18 +296,26 @@
             <h2 class="section-title glitch">Contact Me</h2>
             
             <div class="contact-container">
-                <button class="contact-button glitch" data-copytext="chen.taiwu@ucalgary.ca">
-                    <img src="assets/email.png" alt="School Email">
-                    <span>chen.taiwu@ucalgary.ca</span>
-                </button>
-                <button class="contact-button glitch" data-copytext="taiwu.chen@icloud.com">
-                    <img src="assets/email.png" alt="Personal Email">
-                    <span>taiwu.chen@icloud.com</span>
-                </button>
-                <button class="contact-button glitch" data-copytext="+15879716606">
-                    <img src="assets/phone.png" alt="Phone">
-                    <span>+1 (587) 971-6606</span>
-                </button>
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="chen.taiwu@ucalgary.ca">
+                        <img src="assets/email.png" alt="School Email">
+                        <span>chen.taiwu@ucalgary.ca</span>
+                    </button>
+                </div>
+                
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="taiwu.chen@icloud.com">
+                        <img src="assets/email.png" alt="Personal Email">
+                        <span>taiwu.chen@icloud.com</span>
+                    </button>
+                </div>
+                
+                <div class="glitch">
+                    <button class="contact-button" data-copytext="+15879716606">
+                        <img src="assets/phone.png" alt="Phone">
+                        <span>+1 (587) 971-6606</span>
+                    </button>
+                </div>
             </div>
         </section>
     </main>

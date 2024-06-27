@@ -196,7 +196,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
     
-    const hiddenElements = document.querySelectorAll('.fade-in-bottom, .fade-in-top, .hidden, .scale-in, .rotate-in, .slide-in-right, .slide-in-top, .slide-in-bottom, .flip-in, .swing-in, .zoom-out, .glitch, .elastic-in');
+    const hiddenElements = document.querySelectorAll('.fade-in-bottom, .fade-in-top, .slide-in-left, .scale-in, .rotate-in, .slide-in-right, .slide-in-top, .slide-in-bottom, .flip-in, .swing-in, .zoom-out, .glitch, .elastic-in');
     hiddenElements.forEach((el) => observer.observe(el));
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const learnMoreButtons = document.querySelectorAll('.learn-more, .details');
+    
+    learnMoreButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const additionalDescription = this.nextElementSibling;
+            additionalDescription.classList.toggle('show');
+            additionalDescription.classList.toggle('hidden');
+        });
+    });
+});
