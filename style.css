@@ -286,7 +286,6 @@ h2 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .skills-grid {
@@ -831,6 +830,11 @@ footer p {
     color: #fff;
 }
 
+.custom-button.learn-more {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
 .custom-button:hover {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -904,12 +908,14 @@ footer p {
 /* Fade-in-bottom */
 .fade-in-bottom {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in-bottom.show {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
 }
 
@@ -1054,7 +1060,7 @@ footer p {
     border: 1px solid #ccc;
     border-radius: 30px;
     background-color: #f9f9f9;
-    max-height: 0;
+
     overflow: hidden;
     transition: max-height 2s ease-in-out, opacity 2s ease-in-out, padding 0.5s ease-in-out;
     opacity: 0;
