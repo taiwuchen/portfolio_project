@@ -267,7 +267,7 @@ section {
 .about-content {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 400px;
     gap: 50px;
     margin-top: 50px;
 }
@@ -854,7 +854,7 @@ footer p {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .slide-in-left.show {
