@@ -58,10 +58,10 @@ nav ul {
 
 }
 
-
 nav ul li {
     margin-left: 30px;
 }
+
 
 .nav-link {
     text-decoration: none;
@@ -98,6 +98,10 @@ nav ul li {
 
 .nav-link.active::after {
     transform: scaleX(1);
+}
+
+.nav-link:focus {
+    outline: none; /* Remove the focus outline */
 }
 
 .header-scrolled {
@@ -199,6 +203,9 @@ section {
     font-size: 16px;
     cursor: pointer;
 }
+.cta-button:focus {
+    outline: none; /* Remove the focus outline */
+}
 
 
 .social-links {
@@ -227,6 +234,11 @@ section {
     height: 24px;
     object-fit: contain;
 }
+
+.social-icon:focus {
+    outline: none; /* Remove the focus outline */
+}
+
 
 
 /* About Section */
@@ -594,6 +606,9 @@ p {
 .contact-button.copied img {
     filter: brightness(0) invert(1);
 }
+.contact-button:focus {
+    outline: none; /* Remove the focus outline */
+}
 
 /* Footer */
 
@@ -641,6 +656,10 @@ footer nav ul li a::after {
     background-color: #000;
     transform: scaleX(0);
     transition: transform 0.3s ease;
+}
+
+footer nav ul li a:focus {
+    outline: none; /* Remove the focus outline */
 }
 
 footer nav ul li a:hover {
@@ -843,6 +862,9 @@ footer p {
 .custom-button.dark:hover {
     background-color: #333;
     border-color: #333;
+}
+.custom-button:focus {
+    outline: none; /* Remove the focus outline */
 }
 
 

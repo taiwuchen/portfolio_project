@@ -1,10 +1,15 @@
 <style>
+.wrapper {
+    overflow-x: hidden; /* Prevent horizontal scrollbars */
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
     opacity: 0;
+    overflow-x: hidden;
     transition: opacity 0.5s ease-in-out;
 }
 
@@ -200,6 +205,7 @@ section {
     cursor: pointer;
 }
 
+
 .social-links {
     display: flex;
     gap: 10px;
@@ -266,7 +272,7 @@ section {
 .about-content {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 400px;
     gap: 50px;
     margin-top: 50px;
 }
@@ -285,7 +291,6 @@ h2 {
 p {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .skills-grid {
@@ -456,9 +461,89 @@ p {
     object-fit: cover;
 }
 
+/* Awards Section */
+#awards {
+    background-color: #f9f9f9;
+}
+
+/* Container for awards cards */
+.awards-container {
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Styles for each award card */
+.awards-card {
+    display: flex;
+    width: 580px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    transition: all 0.3s ease;
+}
+
+.awards-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for the logo within the award card */
+.awards-logo {
+    flex: 0 0 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; /* This ensures the image stays within the circular boundary */
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0; /* Fallback color in case the image doesn't load */
+}
+
+.awards-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* This ensures the image covers the entire space */
+}
+
+/* Content styles within the award card */
+.awards-content {
+    flex: 1;
+}
+
+.awards-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.organization {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.awards-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
 /* Contact Section */
 #contact {
-    background-color: #f9f9f9;
+    background-color: #fff;
     text-align: center;
     padding: 80px 20px;
 }
@@ -484,6 +569,7 @@ p {
     font-size: 16px;
     transition: all 0.3s ease;
     cursor: pointer;
+    width: 280px;
 }
 
 .contact-button:hover {
@@ -651,22 +737,7 @@ footer p {
         background-color: #ffffff;
     }
 
-    /* Improved Button Styles */
-    .cta-button {
-        display: inline-block;
-        padding: 12px 24px;
-        background-color: #333;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 30px;
-        font-weight: bold;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-    }
 
-    .cta-button:hover {
-        background-color: #555;
-        transform: translateY(-2px);
-    }
 
     /* Improved Social Links */
     .social-link {
@@ -754,11 +825,19 @@ footer p {
     font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none; /* Ensures the link looks like a button */
+    display: inline-block; /* Ensures it behaves like an inline element */
+    text-align: center; /* Centers text inside the button */
 }
 
 .custom-button.dark {
     background-color: #000;
     color: #fff;
+}
+
+.custom-button.learn-more {
+    padding: 10px 20px;
+    font-size: 16px;
 }
 
 .custom-button:hover {
@@ -780,7 +859,7 @@ footer p {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .slide-in-left.show {
@@ -834,12 +913,14 @@ footer p {
 /* Fade-in-bottom */
 .fade-in-bottom {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    filter: blur(5px);
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in-bottom.show {
     opacity: 1;
+    filter: blur(0);
     transform: translateY(0);
 }
 
@@ -978,7 +1059,22 @@ footer p {
 }
 
 .additional-description {
-    animation: slideDown 0.5s ease-in-out;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    background-color: #f9f9f9;
+
+    overflow: hidden;
+    transition: max-height 2s ease-in-out, opacity 2s ease-in-out, padding 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.additional-description.show {
+    max-height: 500px; /* Adjust this as needed */
+    opacity: 1;
+
 }
 
 @keyframes slideDown {
