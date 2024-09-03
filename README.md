@@ -10,11 +10,6 @@ Welcome to my personal portfolio repository. This project showcases my work, ski
 - **script.js**: JavaScript file for interactive elements and animations.
 - **assets/**: Folder containing images and other media files.
 
-## Features
-
-- **Responsive Design**: The portfolio adapts to different screen sizes using media queries.
-- **Interactive Elements**: Includes animations and interactions to enhance user experience.
-
 ## Installation
 - Download as ZIP
 
