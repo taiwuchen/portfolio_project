@@ -304,7 +304,7 @@ p {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .skill-item {
@@ -337,7 +337,8 @@ p {
 
 
 .skill-name {
-    font-size: 16px;
+    font-size: 18px;
+    
 }
 
 
