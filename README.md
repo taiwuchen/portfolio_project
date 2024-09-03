@@ -16,8 +16,15 @@ Welcome to my personal portfolio repository. This project showcases my work, ski
 - **Interactive Elements**: Includes animations and interactions to enhance user experience.
 
 ## Installation
+- Download as ZIP
 
-Clone the repository and open `index.html` in your browser to view the portfolio.
+1. Click on the green "Code" button at the top right of the repository.
+2. Select "Download ZIP".
+3. Extract the downloaded ZIP file.
+4. Open index.html in your browser to view the portfolio.
+
+
+- Clone the repository and open `index.html` in your browser to view the portfolio.
 
 ```bash
-git clone https://github.com/yourusername/portfolio_taiwu.git
+git clone [https://github.com/yourusername/portfolio_taiwu.git](https://github.com/taiwuchen/portfolio_taiwu.git)
