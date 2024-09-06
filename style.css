@@ -450,7 +450,6 @@ p {
 }
 
 .projects-card {
-    display: flex;
     background-color: #fff;
     border-radius: 30px;
     overflow: hidden;
