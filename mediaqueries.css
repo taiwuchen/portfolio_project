@@ -65,7 +65,7 @@
     align-items: center;
   }
 
-  .experience-card, .project-card {
+  .experience-card, .project-card, .awards-card {
     width: 100%;
     max-width: 350px;
   }
