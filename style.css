@@ -279,7 +279,7 @@ section {
 .about-content {
     display: flex;
     max-width: 1200px;
-    margin: 0 400px;
+    margin: 0 auto;
     gap: 50px;
     margin-top: 50px;
 }
@@ -1105,3 +1105,4 @@ footer p {
         opacity: 1;
     }
 }
+
