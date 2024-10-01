@@ -10,9 +10,7 @@
   display: none;
 }
 
-html {
-   overflow-x: hidden;
-}
+
 
 /* Responsive Styles for Tablets and Mobile Devices */
 @media screen and (max-width: 768px) {
@@ -188,6 +186,9 @@ html {
     padding: 10px 0;
   }
 }
+
+
+
 
 /* Extra Responsive Styles for Very Small Screens (e.g., Smartphones) */
 @media screen and (max-width: 480px) {
