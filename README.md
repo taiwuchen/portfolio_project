@@ -10,10 +10,3 @@ Welcome to my personal portfolio repository. This project showcases my work, ski
 - **script.js**: JavaScript file for interactive elements and animations.
 - **assets/**: Folder containing images and other media files.
 
-## Installation
-- Download as ZIP
-
-1. Click on the green "Code" button at the top right of the repository.
-2. Select "Download ZIP".
-3. Extract the downloaded ZIP file.
-4. Open index.html in your browser to view the portfolio.
